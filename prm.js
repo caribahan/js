@@ -16,16 +16,16 @@ function getUrlParam(parameter, defaultvalue){
     return urlparameter;
 }
 
-var mytext = getUrlParam('go',null);
+var mytext = getUrlParam('fut',null);
 
 
 //ini sebuah perbandingan jika parameter kosong atau terisi
 if(mytext == null){document.getElementById("jika").style.display="none";}
 else
 	
-//ini script buat lanjut jut apalah gitu
+//ini secript buat lanjut jut apalah gitu
     var timeout,interval
-    var threshold = 100;
+    var threshold = 2000;
     var secondsleft=threshold;
 
     window.onload = function()
@@ -35,7 +35,7 @@ else
 
      function startChecking()
      {
-        secondsleft-=50;
+        secondsleft-=1000;
         document.querySelector(".wait");  
         if(secondsleft == 0)
         {
@@ -54,7 +54,7 @@ else
            interval = setInterval(function()
            {
                startChecking();
-           },50)              
+           },1000)              
    }
 
    function resetTimer()
@@ -67,17 +67,9 @@ else
 	document.getElementById("showlink").style.display="";
    }
    
-//ini script buat memberikan link pada tulisan menuju link
-$(document).ready(function(){
-	var uri_dec = decodeURIComponent(mytext);
-	var creampie = 'https://' + uri_dec ;
-	$('a[href^="#?"]').each(function(){ 
-		var Janda = $(this).attr("href"); 
-		var Perawan = Janda.replace("#?", creampie); 
-		$(this).attr("id", "crot"); 
-		$(this).attr("href", Perawan); 
-		var ubah = document.getElementById("crot").href;
-				
-	});
-	
-});
+function buka(){ 
+  
+  var uri_dec = decodeURIComponent(mytext);
+  
+window.open('https://' + uri_dec); }
+
