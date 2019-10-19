@@ -72,5 +72,5 @@ function buka(){
   
   var uri_dec = decodeURIComponent(mytext);
   
-window.open(' uri_dec); }
+window.open(uri_dec); }
 
