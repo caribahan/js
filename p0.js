@@ -68,9 +68,16 @@ else
 	document.querySelector(".to").style.display="none";
    }
    
-function buka(){ 
-  
-  var uri_dec = decodeURIComponent(mytext);
-  
-window.open('https://' + uri_dec); }
-
+//ini script buat memberikan link pada tulisan menuju link
+$(document).ready(function(){
+	//var uri_dec = decodeURIComponent(mytext);
+	$('a[href^="https://duniahanyasementara"]').each(function(){ 
+		var Janda = $(this).attr("href"); 
+		var Perawan = Janda.replace("https://duniahanyasementara", 'https://www.caribahan.online/2019/10/puisi-tentang-melangkah-kedepan-bersama.html?fut=' + mytext); 
+		$(this).attr("id", "crot"); 
+		$(this).attr("href", Perawan); 
+		$(this).attr("rel", "nofollow"); 
+				
+	});
+	
+});
