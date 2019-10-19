@@ -36,7 +36,7 @@ else
      function startChecking()
      {
         secondsleft-=1000;
-        document.querySelector(".wait");  
+        document.querySelector(".wait2");  
         if(secondsleft == 0)
         {
             //document.getElementById("clickme").style.display="";
