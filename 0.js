@@ -17,7 +17,7 @@ function getUrlParam(parameter, defaultvalue){
 }
 
 var mytext = getUrlParam('fut',null);
-
+var secondtext = getUrlParam('go',null);
 
 //ini sebuah perbandingan jika parameter kosong atau terisi
 if(mytext == null){document.getElementById("jika").style.display="none";}
@@ -81,3 +81,18 @@ $(document).ready(function(){
 	});
 	
 });
+
+
+//ini sebuah perbandingan jika parameter kosong atau terisi
+if(secondtext == null){document.getElementById("tomboldownload").style.display="none";}
+else
+
+   
+function lanjutkan(){ 
+  
+  var tautan = decodeURIComponent(secondtext);
+  
+window.open('tautan); }
+
+
+
