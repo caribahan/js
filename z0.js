@@ -92,7 +92,7 @@ function lanjutkan(){
   
   var tautan = decodeURIComponent(secondtext);
   
-window.open('tautan); }
+window.open(tautan); }
 
 
 
