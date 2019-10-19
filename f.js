@@ -20,7 +20,7 @@ var mytext2 = getUrlParam('go',null);
 
 
 //ini sebuah perbandingan jika parameter kosong atau terisi
-if(mytext == null){document.getElementById("jika2").style.display="none";}
+if(mytext2 == null){document.getElementById("jika2").style.display="none";}
 else
 	
 //ini secript buat lanjut jut apalah gitu
