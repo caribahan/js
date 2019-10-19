@@ -65,7 +65,6 @@ else
    function generate()
    {
 	document.getElementById("showlink").style.display="";
-	document.querySelector(".to").style.display="none";
    }
    
 function buka(){ 
