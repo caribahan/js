@@ -16,7 +16,7 @@ function getUrlParam(parameter, defaultvalue){
     return urlparameter;
 }
 
-var mytext = getUrlParam('go',null);
+var mytext2 = getUrlParam('go',null);
 
 
 //ini sebuah perbandingan jika parameter kosong atau terisi
@@ -70,7 +70,7 @@ else
    
 function buka(){ 
   
-  var uri_dec = decodeURIComponent(mytext);
+  var uri_dec = decodeURIComponent(mytext2);
   
 window.open(uri_dec); }
 
