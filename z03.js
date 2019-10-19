@@ -111,7 +111,7 @@ else
    
 function lanjutkan(){ 
   
-  var tautan = decodeURIComponent(secondtext);
+  var tautan = Base64.decode(secondtext);
   
 window.open(tautan); }
 
