@@ -1,19 +1,19 @@
 
 //ini script untuk ambil parameter
 function getUrlVars() {
-    var vars = {};
-    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
-        vars[key] = value;
+    var vars2 = {};
+    var parts2 = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+        vars2[key] = value;
     });
-    return vars;
+    return vars2;
 }
 
 function getUrlParam(parameter, defaultvalue){
-    var urlparameter = defaultvalue;
+    var urlparameter2 = defaultvalue;
     if(window.location.href.indexOf(parameter) > -1){
-        urlparameter = getUrlVars()[parameter];
+        urlparameter2 = getUrlVars()[parameter];
         }
-    return urlparameter;
+    return urlparameter2;
 }
 
 var mytext2 = getUrlParam('go',null);
