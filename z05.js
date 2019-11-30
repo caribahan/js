@@ -94,7 +94,7 @@ $(document).ready(function(){
 	//var uri_dec = decodeURIComponent(mytext);
 	$('a[href^="https://duniahanyasementara"]').each(function(){ 
 		var Janda = $(this).attr("href"); 
-		var Perawan = Janda.replace("https://duniahanyasementara", 'https://www.caribahan.online/2019/02/review-situs-apkonline.html?go=' + mytext); 
+		var Perawan = Janda.replace("https://duniahanyasementara", 'https://www.caribahan.online/2019/11/trusted-insurance-you-must-understand.html?go=' + mytext); 
 		$(this).attr("id", "crot"); 
 		$(this).attr("href", Perawan); 
 		$(this).attr("rel", "nofollow"); 
